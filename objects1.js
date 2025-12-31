@@ -41,31 +41,62 @@ const Object1 ={
 // console.log(commbineObjects);
 
 
-const user = [
-    {
-    name: "Alice",
-    age: 30,
-    email: "alice@gmail.com",
-    },
-    {
-    name: "Alice",
-    age: 30,
-    email: "alice@gmail.com",
-    },
-    {
-    name: "Alice",
-    age: 30,
-    email: "alice@gmail.com",
-    },
-    {
-    name: "Alice",
-    age: 30,
-    email: "alice@gmail.com",
-    },
-]
+// const user = [
+//     {
+//     name: "Alice",
+//     age: 30,
+//     email: "alice@gmail.com",
+//     },
+//     {
+//     name: "Alice",
+//     age: 30,
+//     email: "alice@gmail.com",
+//     },
+//     {
+//     name: "Alice",
+//     age: 30,
+//     email: "alice@gmail.com",
+//     },
+//     {
+//     name: "Alice",
+//     age: 30,
+//     email: "alice@gmail.com",
+//     },
+// ]
 
-console.log(user[1].email);
-console.log(user[3].name);
-console.log(Object.keys(Object1));
-console.log(Object.values(Object1));
-console.log(Object.entries(Object1));
+// console.log(user[1].email);
+// console.log(user[3].name);
+// console.log(Object.keys(Object1));
+// console.log(Object.values(Object1));
+// console.log(Object.entries(Object1));
+
+
+// const o = new Object();
+// o.name = "John";
+// o.age = 25;
+// o.city = "New York";
+
+// console.log(o);
+
+const course = {
+    title: "JavaScript Basics",
+    duration: "4 weeks",
+    courseInstructor: "Muhammad Rasel",
+    level : "Beginner",
+    company: "Programming Hero"
+}
+
+//object destructuring
+// console.log(course);
+// console.log(course.courseInstructor);
+
+
+// const {courseInstructor, title, duration, level, company} = course;
+// console.log(courseInstructor);
+// console.log(title);
+// console.log(duration);
+// console.log(level);
+// console.log(company);
+
+const {courseInstructor: instructor} = course;
+console.log(instructor);
